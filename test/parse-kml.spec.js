@@ -2,6 +2,8 @@ const assert = require('assert');
 const fs = require('fs');
 const kmlParser = require('../index');
 const expect = require('expect.js');
+require('jsdom-global')();
+global.DOMParser = window.DOMParser
 
 describe('reads kml content', () => {
   const fileContent = fs.readFileSync('./test/sample/kml_sample.kml', 'utf8');

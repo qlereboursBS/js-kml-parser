@@ -2,9 +2,10 @@
   "name": "js-kml-parser",
   "version": "0.0.1",
   "description": "Simple parser for kml files that can be used in Javascript. Use the parser to get a GeoJSON object representation from the kml file content.",
-  "main": "index.js",
+  "main": "dist/index.min.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "gulp build"
   },
   "keywords": [
     "kml",
@@ -15,10 +16,21 @@
   ],
   "author": "Quentin Lerebours (quentin.lerebours@gmail.com)",
   "license": "MIT",
+  "homepage": "https://github.com/qlereboursBS/js-kml-parser",
+  "bugs": {
+    "url": "https://github.com/qlereboursBS/js-kml-parser/issues"
+  },
   "dependencies": {
     "@mapbox/togeojson": "^0.16.0",
     "expect.js": "^0.3.1",
     "mocha": "^9.0.3",
     "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-mocha": "^8.0.0",
+    "jsdom": "^17.0.0",
+    "jsdom-global": "^3.0.2"
   }
 }
