@@ -1,3 +1,5 @@
+Client side helper to read .kml files content and parse their content as GeoJSON.
+
 ## Install
 `npm install js-kml-parser` or `yarn add js-kml-parser`
 
