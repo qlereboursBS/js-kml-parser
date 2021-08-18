@@ -1,6 +1,6 @@
 {
   "name": "js-kml-parser",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple parser for kml files that can be used in client side Javascript. Use the parser to get a GeoJSON object representation from the kml file content.",
   "main": "dist/index.min.js",
   "scripts": {
